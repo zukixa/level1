@@ -24,7 +24,7 @@ The banner function provides immediate feedback to the player on their actions w
 
 **Comments/Style:**
 
-- Follow the style guideline described in `STYLE.md` within the project repository to maintain code consistency.
+- Follow the style guideline described in [`STYLE.md`](https://github.com/zukixa/level1/blob/main/STYLE.md) within the project repository to maintain code consistency.
 
 ### Test-Driven Developmen (TDD) Approach
 

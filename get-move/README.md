@@ -20,7 +20,7 @@ Requests and processes the player's input for a move.
 
 **Comments/Style:**
 
-- Follow the style guideline described in `STYLE.md` within the project repository to maintain code consistency.
+- Follow the style guideline described in [`STYLE.md`](https://github.com/zukixa/level1/blob/main/STYLE.md) within the project repository to maintain code consistency.
 - Alternative keys ('W', 'Z', 'A', 'S') or arrow keys can be accepted if their capture is feasible.
 
 ### Test-Driven Developmen (TDD) Approach

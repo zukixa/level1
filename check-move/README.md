@@ -30,7 +30,7 @@ Evaluates the player's proposed move within the maze.
 
 **Comments/Style:**
 
-- Follow the style guideline described in `STYLE.md` within the project repository to maintain code consistency.
+- Follow the style guideline described in [`STYLE.md`](https://github.com/zukixa/level1/blob/main/STYLE.md) within the project repository to maintain code consistency.
 - The value of `won` is ignored if `bad` is true, and also if `won` is false.
 
 ### Test-Driven Developmen (TDD) Approach

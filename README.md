@@ -29,12 +29,12 @@ Teams will collaboratively write a text-graphics maze game. In this game, an adv
 
 Teams will be tasked with developing several key functions of the game, each contained in its own folder and files:
 
-- `create_maze`: Generates the maze structure.
-- `print_maze`: Handles the display of the maze and the remaining moves.
-- `get_move`: Captures player's input for movement.
-- `check_move`: Validates the player's movement based on the game rules.
-- `update_maze`: Updates the maze and player's position based on the movement.
-- `banner`: Displays messages based on game outcomes (win/loss).
+- [`create_maze`:](https://github.com/zukixa/level1/tree/main/create-maze) Generates the maze structure.
+- [`print_maze`:](https://github.com/zukixa/level1/tree/main/print-maze) Handles the display of the maze and the remaining moves.
+- [`get_move`:](https://github.com/zukixa/level1/tree/main/get-move) Captures player's input for movement.
+- [`check_move`:](https://github.com/zukixa/level1/tree/main/check-move) Validates the player's movement based on the game rules.
+- [`update_maze`:](https://github.com/zukixa/level1/tree/main/update-maze) Updates the maze and player's position based on the movement.
+- [`banner`:](https://github.com/zukixa/level1/tree/main/banner) Displays messages based on game outcomes (win/loss).
 
 Each folder holds further instructions on how to implement and work on your team's subsection.
 
