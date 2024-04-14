@@ -1,10 +1,10 @@
-### Project **Maze Game** - Get Move Function Development and Git Workflow Guide
+### Project **Maze Game** - Function get_move Development and Git Workflow Guide
 
 #### Introduction
 
 This document serves as both a specification for the development of the `get_move` function within the Maze Game project and a guide to the Git workflow that should be adopted for collaborative and orderly development.
 
-#### **Get Move Function**
+#### **get_move Function**
 
 **Description:**
 Requests and processes the player's input for a move.
@@ -15,8 +15,8 @@ Requests and processes the player's input for a move.
 
 **Outputs:**
 
-- `deltaX`: Integer equal to -1, 0, or 1 indicating the change in horizontal position.
-- `deltaY`: Integer equal to -1, 0, or 1 indicating the change in vertical position.
+- `delta_x`: Integer equal to -1, 0, or 1 indicating the change in horizontal position.
+- `delta_y`: Integer equal to -1, 0, or 1 indicating the change in vertical position.
 
 **Comments/Style:**
 
@@ -82,12 +82,13 @@ git clone [repository URL]
 - Part of the learning objectives is to engage with merge conflicts as they arise during the process of merging branches.
 - If you encounter any merge conflicts as you proceed, here is a suggested tutorial you can follow for [How to Fix Merge Conflicts in Git](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/)
 
-#### Final Integration
+#### Integration into Main
 
-- After completing all tasks and ensuring functionality through testing, make a final pull request from `get_move_feature` to the main branch.
-- This process should involve careful review to ensure a seamless integration.
+- Once all tasks are done and the tests are passed, create a pull request from the `get_move_feature` branch to the main branch.
+- Review the changes carefully to ensure the new features blend well with the existing code.
 
 #### Incremental Improvement and MVP Development
 
-- Teams are encouraged to pursue the Minimum Viable Product (MVP) strategy; submit basic functional components first.
-- If done early, enhancements and creative additions can follow through subsequent branch updates and pull requests.
+- Start with a Minimum Viable Product (MVP) approach by integrating the basic functions into the main branch first. This sets a functional base early in the project.
+- Focus initially on core features to establish foundational functionality, allowing for early testing and feedback.
+- After stabilizing the base, gradually add more complex features or enhancements through additional updates and pull requests. This step-by-step approach helps manage risks and improves the product over time.

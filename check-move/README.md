@@ -1,27 +1,23 @@
-### Project **Maze Game** - Check Move Function Development and Git Workflow Guide
+### Project **Maze Game** - Function check_move Development and Git Workflow Guide
 
 #### Introduction
 
 This document serves as both a specification for the development of the `check_move` function within the Maze Game project and a guide to the Git workflow that should be adopted for collaborative and orderly development.
 
-#### **Check Move Function**
+#### **check_move Function**
 
 **Description:**
 Evaluates the player's proposed move within the maze.
 
 **Inputs:**
 
-- `currentX`: Integer indicating the player's current horizontal position.
-- `currentY`: Integer indicating the player's current vertical position.
+- `current_x`: Integer indicating the player's current horizontal position.
+- `current_y`: Integer indicating the player's current vertical position.
 - `width`: Even integer representing the maze's width in characters.
 - `height`: Even integer representing the maze's height in characters.
-- `maze`: A `width` x `height` array containing:
-  - 'A' at `(currentX, currentY)` for the player's position.
-  - 'T' at `(width/2, height/2)` for the treasure.
-  - Randomly placed asterisks as boulders.
-  - Spaces elsewhere.
-- `deltaX`: Integer (-1, 0, or 1) representing the change in horizontal position.
-- `deltaY`: Integer (-1, 0, or 1) representing the change in vertical position.
+- `maze`: `width` x `height` 2D array representing the maze, created in [`create_maze`](https://github.com/zukixa/level1/tree/main/create-maze#create-maze-function).
+- `delta_x`: Integer (-1, 0, or 1) representing the change in horizontal position.
+- `delta_y`: Integer (-1, 0, or 1) representing the change in vertical position.
 
 **Outputs:**
 
@@ -92,12 +88,13 @@ git clone [repository URL]
 - Part of the learning objectives is to engage with merge conflicts as they arise during the process of merging branches.
 - If you encounter any merge conflicts as you proceed, here is a suggested tutorial you can follow for [How to Fix Merge Conflicts in Git](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/)
 
-#### Final Integration
+#### Integration into Main
 
-- After completing all tasks and ensuring functionality through testing, make a final pull request from `check_move_feature` to the main branch.
-- This process should involve careful review to ensure a seamless integration.
+- Once all tasks are done and the tests are passed, create a pull request from the `check_move_feature` branch to the main branch.
+- Review the changes carefully to ensure the new features blend well with the existing code.
 
 #### Incremental Improvement and MVP Development
 
-- Teams are encouraged to pursue the Minimum Viable Product (MVP) strategy; submit basic functional components first.
-- If done early, enhancements and creative additions can follow through subsequent branch updates and pull requests.
+- Start with a Minimum Viable Product (MVP) approach by integrating the basic functions into the main branch first. This sets a functional base early in the project.
+- Focus initially on core features to establish foundational functionality, allowing for early testing and feedback.
+- After stabilizing the base, gradually add more complex features or enhancements through additional updates and pull requests. This step-by-step approach helps manage risks and improves the product over time.

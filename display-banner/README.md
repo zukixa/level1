@@ -1,15 +1,15 @@
-### Project **Maze Game** - Banner Function Development and Git Workflow Guide
+### Project **Maze Game** - Function display_banner Development and Git Workflow Guide
 
 #### Introduction
 
-This document serves as both a specification for the development of the `banner` function within the Maze Game project and a guide to the Git workflow that should be adopted for collaborative and orderly development.
+This document serves as both a specification for the development of the `display_banner` function within the Maze Game project and a guide to the Git workflow that should be adopted for collaborative and orderly development.
 
 ### Function Specification
 
-#### **Banner Function**
+#### **display_banner Function**
 
 **Description:**
-The banner function provides immediate feedback to the player on their actions within the game.
+The display_banner function provides immediate feedback to the player on their actions within the game.
 
 **Inputs:**
 
@@ -18,12 +18,13 @@ The banner function provides immediate feedback to the player on their actions w
 
 **Output:**
 
-- Print `"Invalid move, try again."` if `bad` is True.
-- Print `"Congratulations, you won!"` if `bad` is False and `won` is True.
-- Print `"Game over, try again."` if `bad` is False and `won` is False.
+- Print some form of bad move message if `bad` is True.
+- Print a celebratory message if `bad` is False and `won` is True.
+- Print a disappointing message of sorts if `bad` is False and `won` is False.
 
 **Comments/Style:**
 
+- Short messages are fine (there is no need to be fancy)
 - Follow the style guideline described in [`STYLE.md`](https://github.com/zukixa/level1/blob/main/STYLE.md) within the project repository to maintain code consistency.
 
 ### Test-Driven Developmen (TDD) Approach
@@ -57,11 +58,11 @@ git clone [repository URL]
 
 ###### Team Leader Responsibilities
 
-- A **feature branch** named `banner_feature` should be created by the team leader as the main branch for this specific function's development.
+- A **feature branch** named `display_banner_feature` should be created by the team leader as the main branch for this specific function's development.
   ```
-  git checkout -b banner_feature
+  git checkout -b display_banner_feature
   ```
-- Team members will then create individual **subbranches** for their tasks which will initially merge into the `banner_feature` branch.
+- Team members will then create individual **subbranches** for their tasks which will initially merge into the `display_banner_feature` branch.
   ```
   git checkout -b [specific_task_branch]
   ```
@@ -77,7 +78,7 @@ git clone [repository URL]
 
 ##### 3. **Pull Requests**
 
-- Ensure all pull requests in your team are made to the `banner_feature` branch, not directly to the main branch.
+- Ensure all pull requests in your team are made to the `display_banner_feature` branch, not directly to the main branch.
 - Utilize the following guide for changing the base branch for pull requests: [Github Guide on Changing Base Branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-base-branch-of-a-pull-request)
 
 ##### 4. **Handling Merge Conflicts**
@@ -85,12 +86,13 @@ git clone [repository URL]
 - Part of the learning objectives is to engage with merge conflicts as they arise during the process of merging branches.
 - If you encounter any merge conflicts as you proceed, here is a suggested tutorial you can follow for [How to Fix Merge Conflicts in Git](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/)
 
-#### Final Integration
+#### Integration into Main
 
-- After completing all tasks and ensuring functionality through testing, make a final pull request from `banner_feature` to the main branch.
-- This process should involve careful review to ensure a seamless integration.
+- Once all tasks are done and the tests are passed, create a pull request from the `display_banner_feature` branch to the main branch.
+- Review the changes carefully to ensure the new features blend well with the existing code.
 
 #### Incremental Improvement and MVP Development
 
-- Teams are encouraged to pursue the Minimum Viable Product (MVP) strategy; submit basic functional components first.
-- If done early, enhancements and creative additions can follow through subsequent branch updates and pull requests.
+- Start with a Minimum Viable Product (MVP) approach by integrating the basic functions into the main branch first. This sets a functional base early in the project.
+- Focus initially on core features to establish foundational functionality, allowing for early testing and feedback.
+- After stabilizing the base, gradually add more complex features or enhancements through additional updates and pull requests. This step-by-step approach helps manage risks and improves the product over time.

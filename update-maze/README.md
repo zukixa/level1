@@ -1,28 +1,28 @@
-### Project **Maze Game** - Maze Update Function Development and Git Workflow Guide
+### Project **Maze Game** - Function update_maze Development and Git Workflow Guide
 
 #### Introduction
 
-This document serves as both a specification for the development of the `maze_update` function within the Maze Game project and a guide to the Git workflow that should be adopted for collaborative and orderly development.
+This document serves as both a specification for the development of the `update_maze` function within the Maze Game project and a guide to the Git workflow that should be adopted for collaborative and orderly development.
 
 ### Function Specification
 
-#### **Update Maze Function**
+#### **update_maze Function**
 
 **Description:**
 Updates the maze based on the player's move.
 
 **Inputs:**
 
-- `currentX`: Integer for the player's current horizontal position.
-- `currentY`: Integer for the player's current vertical position.
-- `maze`: A `width` x `height` array as previously defined.
-- `deltaX`: Integer indicating the change in horizontal position.
-- `deltaY`: Integer indicating the change in vertical position.
+- `current_x`: Integer for the player's current horizontal position.
+- `current_y`: Integer for the player's current vertical position.
+- `maze`: `width` x `height` 2D array representing the maze, created in [`create_maze`](https://github.com/zukixa/level1/tree/main/create-maze#create-maze-function).
+- `delta_x`: Integer indicating the change in horizontal position.
+- `delta_y`: Integer indicating the change in vertical position.
 
 **Outputs:**
 
-- `currentX`: Updated horizontal position.
-- `currentY`: Updated vertical position.
+- `current_x`: Updated horizontal position.
+- `current_y`: Updated vertical position.
 - `maze`: Updated `width` x `height` array reflecting the new player's and potentially treasure's positions.
 
 **Comments/Style:**
@@ -60,11 +60,11 @@ git clone [repository URL]
 
 ###### Team Leader Responsibilities
 
-- A **feature branch** named `maze_update_feature` should be created by the team leader as the main branch for this specific function's development.
+- A **feature branch** named `update_maze_feature` should be created by the team leader as the main branch for this specific function's development.
   ```
-  git checkout -b maze_update_feature
+  git checkout -b update_maze_feature
   ```
-- Team members will then create individual **subbranches** for their tasks which will initially merge into the `maze_update_feature` branch.
+- Team members will then create individual **subbranches** for their tasks which will initially merge into the `update_maze_feature` branch.
   ```
   git checkout -b [specific_task_branch]
   ```
@@ -80,7 +80,7 @@ git clone [repository URL]
 
 ##### 3. **Pull Requests**
 
-- Ensure all pull requests in your team are made to the `maze_update_feature` branch, not directly to the main branch.
+- Ensure all pull requests in your team are made to the `update_maze_feature` branch, not directly to the main branch.
 - Utilize the following guide for changing the base branch for pull requests: [Github Guide on Changing Base Branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-base-branch-of-a-pull-request)
 
 ##### 4. **Handling Merge Conflicts**
@@ -88,12 +88,13 @@ git clone [repository URL]
 - Part of the learning objectives is to engage with merge conflicts as they arise during the process of merging branches.
 - If you encounter any merge conflicts as you proceed, here is a suggested tutorial you can follow for [How to Fix Merge Conflicts in Git](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/)
 
-#### Final Integration
+#### Integration into Main
 
-- After completing all tasks and ensuring functionality through testing, make a final pull request from `maze_update_feature` to the main branch.
-- This process should involve careful review to ensure a seamless integration.
+- Once all tasks are done and the tests are passed, create a pull request from the `update_maze_feature` branch to the main branch.
+- Review the changes carefully to ensure the new features blend well with the existing code.
 
 #### Incremental Improvement and MVP Development
 
-- Teams are encouraged to pursue the Minimum Viable Product (MVP) strategy; submit basic functional components first.
-- If done early, enhancements and creative additions can follow through subsequent branch updates and pull requests.
+- Start with a Minimum Viable Product (MVP) approach by integrating the basic functions into the main branch first. This sets a functional base early in the project.
+- Focus initially on core features to establish foundational functionality, allowing for early testing and feedback.
+- After stabilizing the base, gradually add more complex features or enhancements through additional updates and pull requests. This step-by-step approach helps manage risks and improves the product over time.
