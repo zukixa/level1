@@ -88,12 +88,12 @@ git clone [repository URL]
 - Part of the learning objectives is to engage with merge conflicts as they arise during the process of merging branches.
 - If you encounter any merge conflicts as you proceed, here is a suggested tutorial you can follow for [How to Fix Merge Conflicts in Git](https://www.freecodecamp.org/news/how-to-fix-merge-conflicts-in-git/)
 
-## Integration into Main
+### 5. **Integration into Main**
 
 - Once all tasks are done and the tests are passed, create a pull request from the `check_move_feature` branch to the main branch.
 - Review the changes carefully to ensure the new features blend well with the existing code.
 
-## Incremental Improvement and MVP Development
+### 6. **Incremental Improvement and MVP Development**
 
 - Start with a Minimum Viable Product (MVP) approach by integrating the basic functions into the main branch first. This sets a functional base early in the project.
 - Focus initially on core features to establish foundational functionality, allowing for early testing and feedback.

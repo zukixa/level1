@@ -89,7 +89,7 @@ Teams will be tasked with developing several key functions of the game, each con
     - `current_y`: Updated vertical position.
     - `maze`: Updated `width` x `height` 2D array reflecting the new player's and potentially treasure's positions.
 
-- [`display_banner`:](https://github.com/zukixa/level1/tree/main/display_banner) Displays messages based on game outcomes (win/loss).
+- [`display_banner`:](https://github.com/zukixa/level1/tree/main/display-banner) Displays messages based on game outcomes (win/loss).
   - **Inputs:**
     - `bad`: A boolean value indicating if a move places the player outside the maze or on a boulder.
     - `won`: A boolean value indicating whether the player has won (True) or lost (False).
