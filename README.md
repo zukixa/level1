@@ -102,7 +102,7 @@ Each folder holds further instructions on how to implement and work on your team
 
 ## Development Strategy
 
-- **Composition**:: It is suggested that each team is composed of three people at a maximum. Each team should follow a cycle of A writes test. B implements code. C does code review and look for refactor opportunities. These roles would rotate after each cycle.
+- **Composition**: It is suggested that each team is composed of three people, A, B, and C. Each team should follow a cycle: A writes test. B implements code. C does code review and look for refactor opportunities. These roles would rotate after each cycle.
 - **Modular Development**: Each team works on a separate piece; modules should be designed to be self-contained and independently functional.
 - **Collaboration and Version Control**: Git will be used to manage changes. Teams should create feature branches for development before merging into the main branch, enabling a controlled integration process and familiarization with common source control workflows, including handling merge conflicts.
 - **MVP Development**: Start with a Minimum Viable Product (MVP) approach by integrating the basic functions into the main branch first, allowing for early testing and feedback. After stabilizing the base, gradually add more complex features or enhancements through additional updates and pull requests.
